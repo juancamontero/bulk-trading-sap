@@ -1,0 +1,39 @@
+---
+import Navigation from '../components/Navigation.astro'
+
+const menuItems = [
+  { name: 'Inicio', url: '/' },
+  { name: 'Ss', url: '#servicios' },
+  { name: 'Hist', url: '#historia' },
+  { name: 'Cont', url: '#contacto' },
+  { name: 'Blog', url: '/blog' },
+]
+
+interface Props {
+  pageTitle?: string
+}
+
+const { pageTitle } = Astro.props
+---
+
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{pageTitle ?? 'Custom despription fallback'}</title>
+    <style>
+      h1 {
+        @apply text-xl font-semibold text-cyan-800;
+      }
+    </style>
+  </head>
+  <body>
+    <Navigation menuItems={menuItems} />
+
+    <main class='w-full flex flex-col justify-start items-center'>
+      <slot />
+    </main>
+  </body>
+</html>
