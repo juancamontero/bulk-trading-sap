@@ -1,6 +1,6 @@
 ---
 title: 'Operación de equipos portuarios'
-description: 'This is the first post of my new Astro blog.'
+description: 'Mediante la programación de expertos operadores de equipos de arrastre, aseguramos para nuestros clientes la movilización de las cargas al interior de los predios portuarios, asegurando que el porteo de las mismas se cumpla conforme la normatividad del terminal, las ratas de producción, asegurando la conservación de los equipos, las instalaciones y las personas.'
 image:
     url: '/destacada-opt-tt.webp'
     alt: 'Operación de equipos portuarios - foto destacada'

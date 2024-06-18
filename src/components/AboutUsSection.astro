@@ -1,0 +1,47 @@
+---
+const logosClientes = [
+  { nombre: 'SPB', urlImage: '/spb.png' },
+  { nombre: 'Almagrario', urlImage: '/almagra.png' },
+  { nombre: 'Ciamsa', urlImage: '/ciamsa-bl.png' },
+]
+---
+
+<section
+  class='flex flex-col justify-start items-center w-full x-padding bg-bg-200 mt-10 py-20'
+  id="sobre-nosotros"
+>
+  <div class='max-w-screen-xl flex flex-col gap-12'>
+    <h3 class='font-bold text-accent-200 text-3xl'>Sobre nosotros</h3>
+    <p class='leading-relaxed text-text-200'>
+      <strong>BULK TRADING DE COLOMBIA SAS</strong> es una empresa colombiana, habilitada
+      como Operador Portuario ante la Superintendencia de Puertos y Transporte, con
+      presencia en el mercado de Buenaventura desde hace más de 20 años.<br
+      /><br /> Desde el segundo semestre de 2017 iniciamos un programa de fortalecimiento
+      y crecimiento empresarial que ha permitido la implementación de un modelo de
+      administración por procesos, centrado en la atención a los requerimientos y
+      expectativas de nuestros clientes.<br /><br />Por principio de negocios
+      damos cumplimiento a todas las ordenanzas legales en el ámbito laboral,
+      tributario, comercial y civil.<br /><br />Hemos desarrollado servicios
+      para importantes actores del comercio exterior:
+    </p>
+  </div>
+</section>
+<section
+  class='flex flex-col justify-start items-center w-full x-padding banner-background py-20'
+>
+  <ul
+    class='flex gap-y-6 flex-wrap items-center justify-center [&>*]:px-12 lg:divide-x'
+  >
+    {
+      logosClientes.map((logo) => (
+        <li class='flex-none'>
+          <img
+            src={logo.urlImage}
+            alt={logo.nombre}
+            class='w-56 p-2'
+          />
+        </li>
+      ))
+    }
+  </ul>
+</section>

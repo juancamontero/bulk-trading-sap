@@ -1,4 +1,8 @@
 ---
+
+import '../styles/global.css';
+// Supports weights 100-900
+import '@fontsource-variable/onest';
 import Navigation from '../components/Navigation.astro'
 
 const menuItems = [
@@ -23,16 +27,10 @@ const { pageTitle } = Astro.props
     <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
     <title>{pageTitle ?? 'Custom despription fallback'}</title>
-    <style>
-      h1 {
-        @apply text-xl font-semibold text-cyan-800;
-      }
-    </style>
   </head>
   <body>
     <Navigation menuItems={menuItems} />
-
-    <main class='w-full flex flex-col justify-start items-center'>
+    <main class='w-full flex flex-col justify-start items-center gap-0'>
       <slot />
     </main>
   </body>

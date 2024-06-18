@@ -1,6 +1,6 @@
 ---
 title: 'Servicio de tarja'
-description: 'This is the first post of my new Astro blog.'
+description: 'En atención a la delegación recibida de nuestros clientes, efectuamos el servicio de tarja en todos aquellos puntos de la operación portuaria donde se efectúa transferencia de responsabilidad sobre las mercancías, asegurando la mutua conformidad entre quién entrega y quién recibe, mediante la elaboración de un documento físico o digital.'
 image:
     url: '/destacada-tarja.webp'
     alt: 'Servicio de tarja - imagen destacada'

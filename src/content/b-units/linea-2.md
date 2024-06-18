@@ -1,6 +1,6 @@
 ---
 title: 'Estiba marítima de contenedores'
-description: 'This is the first post of my new Astro blog.'
+description: 'Abordo de las motonaves portacontenedores efectuamos el servicio de trinque y destrinque de los contenedores, conforme el Plan de Operaciones de cada barco. De esta forma apoyamos el descargue y cargue en forma segura y eficiente de los contenedores, asegurando la conservación de las unidades de carga, la motonave, la grúa y sus accesorios, así como las personas involucradas en desarrollo del servicio. '
 image:
     url: '/destacada-estiba.webp'
     alt: 'Estiba marítima de contenedores - foto destacada'

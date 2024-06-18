@@ -1,23 +1,15 @@
 ---
+import AboutUsSection from '../components/AboutUsSection.astro'
+import BannerHome from '../components/BannerHome.astro'
+import BusinessLinesSection from '../components/BusinessLinesSection.astro'
 import BaseLayout from '../layouts/BaseLayout.astro'
 
-// const { frontmatter } = Astro.props
 const allUnits = await Astro.glob('../content/b-units/*.md')
 ---
 
 <BaseLayout pageTitle='Pagina inicio'>
-  <ul class='flex flex-row gap-36'>
-    {
-      allUnits.map((unit) => (
-        <li class='flex flex-col justify-start items-center lg:w-1/3 w-full'>
-          <h2>{unit.frontmatter.title}</h2>
-          <p>{unit.frontmatter.description}</p>
-          <img
-            src={unit.frontmatter.image.url}
-            alt={unit.frontmatter.image.alt}
-          />
-        </li>
-      ))
-    }
-  </ul>
+  <BannerHome />
+
+  <BusinessLinesSection />
+  <AboutUsSection />
 </BaseLayout>
